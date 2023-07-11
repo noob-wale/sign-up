@@ -7,16 +7,24 @@
   box-sizing: border-box;
 }
 
+:root {
+  --sec-mag: 50px 80px;
+  --elem-pad: 10px 0; 
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 img {
   width: 100px;
   height: 100px;
 }
 
 .container {
-  width: 900px;
-  height: 550px;
+  width: 80%;
+  height: 90vh;
   margin: 50px auto;
-  background-color: green;
   box-shadow: 5px 5px 10px #757470;
   display: flex;
 }
@@ -42,4 +50,23 @@ img {
     font-family: 'Skranji', cursive;
     color: white;
     font-weight: 700;
+}
+
+.main-content {
+  margin: var(--sec-mag);
+}
+
+.header-topic, .form {
+  margin: var(--elem-pad);
+}
+
+button {
+  padding: 10px 30px;
+  margin: var(--elem-pad);
+  border-radius: 10px;
+  border: none;
+  background-color: #596D48;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
 }
