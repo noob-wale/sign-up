@@ -17,45 +17,61 @@
       <main class="main-content">
         <p class="header-topic">
           This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams. Sign up now
-          to get started. <br />
-          You know you want to.
+          this in your life to help you realize your deepest dreams. Sign up <em>now</em>
+          to get started. <br /> <br>
+          You <em>know</em> you want to.
         </p>
         <div class="form">
-          <h2>Let's do this!</h2>
-          <form action="submit" method="post">
-            <div class="first-name">
-              <label for="first_name">FIRST NAME</label>
-              <input type="text" id="first_name" name="first_name" required />
-            </div>
-            <div class="last-name">
-              <label for="last_name">LAST NAME</label>
-              <input type="text" id="last_name" name="last_name" required />
-            </div>
-            <div class="user-email">
-              <label for="user_email">EMAIL</label>
-              <input
-                type="email"
-                name="email"
-                id="user_email"
-                placeholder="you@example.com"
-                required
-              />
-            </div>
-            <div class="user-pass">
-              <label for="user_pass">PASSWORD</label>
-              <input type="password" name="user-pass" id="user_pass" required />
-            </div>
-            <div class="confirm-pass">
-              <label for="confirm_pass">CONFIRM PASSWORD</label>
-              <input
-                type="password"
-                name="confirmpass"
-                id="confirm_pass"
-                required
-              />
-            </div>
-          </form>
+          <div class="form-header"><h2>Let's do this!</h2></div>
+          <div class="form-body">
+            <form action="submit" method="post">
+              <div class="user-input">
+                <label for="first_name">FIRST NAME</label>
+                <input type="text" id="first_name" name="first_name" required />
+              </div>
+              <div class="user-input">
+                <label for="last_name">LAST NAME</label>
+                <input type="text" id="last_name" name="last_name" required />
+              </div>
+              <div class="user-input">
+                <label for="user_email">EMAIL</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="user_email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+              <div class="user-input">
+                <label for="user_num">PHONE NUMBER</label>
+                <input
+                  type="number"
+                  name="user-number"
+                  id="user_num"
+                  required
+                />
+              </div>
+              <div class="user-input">
+                <label for="user_pass">PASSWORD</label>
+                <input
+                  type="password"
+                  name="user-pass"
+                  id="user_pass"
+                  required
+                />
+              </div>
+              <div class="user-input">
+                <label for="confirm_pass">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  name="confirmpass"
+                  id="confirm_pass"
+                  required
+                />
+              </div>
+            </form>
+          </div>
         </div>
         <button type="submit">Create Account</button>
         <p>Already have an account?<a href="#">Log in</a></p>

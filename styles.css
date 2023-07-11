@@ -9,7 +9,7 @@
 
 :root {
   --sec-mag: 50px 80px;
-  --elem-pad: 10px 0; 
+  --elem-pad: 30px 0; 
 }
 
 body {
@@ -60,6 +60,30 @@ img {
   margin: var(--elem-pad);
 }
 
+br {
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.user-input {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 10px 0;
+}
+
+input {
+  width: 60%;
+  height: 30px;
+}
+
 button {
   padding: 10px 30px;
   margin: var(--elem-pad);
@@ -69,4 +93,10 @@ button {
   color: white;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
+}
+
+ a {
+  text-decoration: none;
+  color: #596D48;
+  padding-left: 5px;
 }
